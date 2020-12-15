@@ -8,7 +8,7 @@ def new
 end
 
 def create
-     @coupon = Coupon.new(author_params)
+     @coupon = Coupon.new(coupon_params)
 
   if @coupon.valid?
      @coupon.save
