@@ -24,6 +24,6 @@ end
   private
 
   def coupon_params
-    params.permit(:name, :email, :phone_number)
+    params.permit(:coupon_code, :store)
   end
 end
