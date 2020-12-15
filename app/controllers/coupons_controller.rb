@@ -3,6 +3,7 @@ class CouponsController < ApplicationController
   @coupon = Coupon.find(params[:id])
 end
 def index
+  @coupons = Coupon.all
 
 end
 def new
