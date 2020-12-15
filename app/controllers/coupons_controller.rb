@@ -19,3 +19,11 @@ def create
   end
 end
 end
+
+
+  private
+
+  def coupon_params
+    params.permit(:name, :email, :phone_number)
+  end
+end
