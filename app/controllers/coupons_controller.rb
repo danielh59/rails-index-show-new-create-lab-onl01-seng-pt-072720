@@ -1,14 +1,14 @@
 class CouponsController < ApplicationController
   def show
-  @coupon = Author.find(params[:id])
+  @coupon = Coupon.find(params[:id])
 end
 
 def new
-  @coupon = Author.new
+  @coupon = Coupon.new
 end
 
 def create
-     @coupon = Author.new(author_params)
+     @coupon = Coupon.new(author_params)
 
   if @coupon.valid?
      @coupon.save
