@@ -13,7 +13,7 @@ def create
   if @coupon.valid?
      @coupon.save
 
-     redirect_to author_path(@coupon)
+     redirect_to coupon_path(@coupon)
    else
      render :new
   end
