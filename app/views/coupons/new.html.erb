@@ -1,6 +1,7 @@
 <%= form_tag(@coupon) do %>
-  <%= label_tag "name", "Name" %>
-      <%= text_field_tag "name", @author.name %>
+  <%= label_tag "coupon_code", "Coupon Code" %>
+      <%= text_field_tag "coupon_code" %>
+      
 <%= label_tag "email", "Email" %>
     <%= text_field_tag "email", @author.email %>
   <%= submit_tag "Create" %>
